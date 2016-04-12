@@ -1,0 +1,234 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "image:singleplayer.png",
+            "posX" : -137,
+            "posY" : 25,
+            "width" : 284.5,
+            "height" : 116,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {     
+		"singleplayer":
+        {
+			"image" : "button.png",
+            "text" : "Singleplayer",
+            "posX" : -154,
+            "posY" : 75,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "singleplayer"
+            }
+        },
+		"multiplayer":
+        {
+			"image" : "button.png",
+            "text" : "Multiplayer",
+            "posX" : -49,
+            "posY" : 75,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "multiplayer"
+            }
+        },
+		"options":
+        {
+			"image" : "button.png",
+            "text" : "Options",
+            "posX" : 56,
+            "posY" : 75,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "options"
+            }
+        },
+		"proxy":
+        {
+			"image" : "button.png",
+            "text" : "Tak's Proxy",
+            "posX" : -49,
+            "posY" : 108,
+            "width" : 98,
+            "height" : 20,
+            "action" : 
+            {
+                "type" : "connectToServer",
+                "ip" : "81.141.238.2"
+            }
+        },
+		"quit":
+        {
+            "text" : "Q",
+            "posX" : -21,
+            "posY" : -35,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "quit"
+            }
+        },
+		"mods":
+        {
+            "text" : "M",
+            "posX" : -71,
+            "posY" : -35,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+		"lang":
+        {
+            "text" : "L",
+            "posX" : -46,
+            "posY" : -35,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "openGui",
+                "gui" : "languages"
+            }
+        },
+		"refresh":
+        {
+            "text" : "R",
+            "posX" : -96,
+            "posY" : -35,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "bottom_right",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        },
+		"eye":
+        {
+            "text" : "Crash Report",
+            "posX" : -49,
+            "posY" : -35,
+            "width" : 98,
+            "height" : 20,
+			"alignment" : "bottom_center",
+            "wrappedButton" : 666
+        },
+		"ver":
+        {
+            "text" : "V",
+            "posX" : -21,
+            "posY" : -58,
+            "width" : 20,
+            "height" : 20,
+			"alignment" : "bottom_right",
+			"wrappedButton" : 404
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB",
+            "posX" : -108,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+		"pack1":
+        {
+            "text" : "TakPak",
+            "posX" : 2,
+            "posY" : -40,
+            "color" : 8323327,
+            "alignment" : "bottom_left"
+        },
+		"pack2":
+        {
+            "text" : "2.2.1",
+            "posX" : 41,
+            "posY" : -40,
+            "color" : 16777045,
+			"hoverText" : "Wow, such secret",
+			"hoverColor" : 8323327,
+            "alignment" : "bottom_left"
+        },
+		"version":
+        {
+            "text" : "Minecraft #mcversion#",
+            "posX" : 2,
+            "posY" : -30,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		"loaded":
+        {
+            "text" : "#modsloaded# Mods Loaded",
+            "posX" : 2,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+		"active":
+        {
+            "text" : "#modsactive# Mods Active",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : -80,
+            "posY" : 40,
+            "color" : -256,
+            "alignment" : "top_center",
+            "file" : "text:splash.txt"
+           
+        },
+        
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : true
+        }
+    }
+}

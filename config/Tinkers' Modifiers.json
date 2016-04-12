@@ -1,0 +1,124 @@
+{
+	"comments":"Comments are really just any unused tag",
+	"clear":["tconstruct.modifiers.tools.ModInteger", "tconstruct.modifiers.tools.ModRedstone", "tconstruct.modifiers.tools.ModFlux", "tconstruct.modifiers.tools.ModPiston", "tconstruct.modifiers.tools.ModReinforced", "tconstruct.modifiers.tools.ModSmite", "tconstruct.modifiers.tools.ModDurability", "tconstruct.modifiers.tools.ModLapis"],
+	"clearComment":"That was the clear tag. That's used to clear any existing modifiers with that class. Using an asterisk (*) will clear all modifiers.",
+	"itemComment":"The other thing to note is that items are defined using a dictionary ({}). There, define 'item' using a string and 'damage' using either an int or a string for a wildcard. Stack size is ignored",
+	"addModifiers":[
+		{
+			"class":"tconstruct.modifiers.tools.ModRedstone",
+			"arg0":0,
+			"arg1":[
+				{
+					"item":"minecraft:sugar"
+				}
+			],
+			"arg2":[
+				1
+			]
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModReinforced",
+			"arg0":[
+				{
+					"item":"gregtech:gt.metaitem.01",
+					"damage":17316
+				}
+			],
+			"arg1":16,
+			"arg2":0
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModSmite",
+			"arg0":"Smite",
+			"arg1":14,
+			"arg2":[
+				{
+					"item":"Thaumcraft:ItemBathSalts"
+				}
+			],
+			"arg3":[
+				1
+			]
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModDurability",
+			"arg0":[
+				{
+					"item":"gregtech:gt.metaitem.02",
+					"damage":30500
+				}
+			],
+			"arg1":0,
+			"arg2":500,
+			"arg3":0,
+			"arg4":0,
+			"arg5":"Exquisite Diamond",
+			"arg6":"Exquisite Diamond",
+			"arg7":"§b"
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModDurability",
+			"arg0":[
+				{
+					"item":"gregtech:gt.metaitem.02",
+					"damage":30501
+				}
+			],
+			"arg1":0,
+			"arg2":0,
+			"arg3":0.5,
+			"arg4":0,
+			"arg5":"Exquisite Emerald",
+			"arg6":"Exquisite Emerald",
+			"arg7":"§a"
+		},
+		{
+			"class":"org.abimon.mods.minecraft.tmodifiers.modifiers.ModCustomNecrotic",
+			"arg0":[
+                {
+                    "item":"TConstruct:materials",
+                    "damage":8
+                }
+            ],
+            "arg1":8,
+            "arg2":"Necrotic",
+            "arg3":1,
+            "arg4":"§8",
+            "arg5":"Life Steal",
+			"arg6":10
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModPiston",
+			"arg0":3,
+			"arg1":[
+				{
+					"item":"minecraft:piston"
+				}
+			],
+			"arg2":[
+				1
+			]
+		},
+		{
+			"class":"tconstruct.modifiers.tools.ModLapis",
+			"arg0":10,
+			"arg1":[
+				{
+					"item":"minecraft:dye",
+					"damage":4
+				}
+			],
+			"arg2":[
+				1
+			]
+		},
+		"In an addModifiers array, you're able to add a comment as just a string",
+		"With the modifier we just added, we use an incrementing argument number, which corresponds to the position of the value, alternatively you can just use an array called params. These values can be obtained from the Modifers json file generated on startup"
+	],
+	"addModifierComment":"That was the Add Modifiers tag. The Add Modifiers array stores all modifiers to add to the internal registry.",
+	"subModifiers":[
+		"In a subModifiers array, you're able to add a comment as just a string",
+		"With the modifier we just added, we use an incrementing argument number, which corresponds to the position of the value, alternatively you can just use an array called params. These values can be obtained from the Modifers json file generated on startup"
+	],
+	"subModifierComment":"That was the Sub Modifiers tag. The Sub Modifiers array stores all modifiers to subtract from the internal registry."
+}

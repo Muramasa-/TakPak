@@ -1,0 +1,107 @@
+{
+    "images":
+    {
+        "title":
+        {
+            "image" : "custommainmenu:textures/gui/minecraft.png",
+            "posX" : -137,
+            "posY" : 30,
+            "width" : 512,
+            "height" : 512,
+            "alignment" : "top_center"
+        }
+    },
+    
+    "buttons":
+    {     
+        "refresh":
+        {
+            "text" : "",
+            "posX" : -154,
+            "posY" : -60,
+            "width" : 20,
+            "height" : 20,
+            "texture" : "custommainmenu:textures/gui/buttons.png",
+            "action" : 
+            {
+                "type" : "refresh"
+            }
+        }
+    },
+    
+    "texts":
+    {
+        "mojang":
+        {
+            "text" : "Copyright Mojang AB",
+            "posX" : -108,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_right"
+        },
+		"pack":
+        {
+            "text" : "TakPack 1.0.0",
+            "posX" : 2,
+            "posY" : -40,
+            "color" : -1,
+			"hoverText" : "Wow, such secret",
+            "alignment" : "bottom_left"
+        },
+		"version":
+        {
+            "text" : "Minecraft #mcversion#",
+            "posX" : 2,
+            "posY" : -30,
+            "color" : -1,
+            "alignment" : "bottom_left"
+        },
+		"loaded":
+        {
+            "text" : "#modsloaded# Mods Loaded",
+            "posX" : 2,
+            "posY" : -20,
+            "color" : -1,
+            "alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        },
+		"active":
+        {
+            "text" : "#modsactive# Mods Active",
+            "posX" : 2,
+            "posY" : -10,
+            "color" : -1,
+            "alignment" : "bottom_left",
+			"action" : 
+            {
+                "type" : "openGui",
+                "gui" : "mods"
+            }
+        }
+    },
+    
+    "other":
+    {
+        "splash-text":
+        {
+            "posX" : 90,
+            "posY" : 70,
+            "color" : -256,
+            "alignment" : "top_center",
+            "file" : "texts/splashes.txt"
+        },
+        
+        "panorama":
+        {
+            "images" : "minecraft:textures/gui/title/background/panorama_%c.png",
+            "animate" : true,
+            "animationSpeed" : 1,
+            "blur" : true,
+            "gradient" : true
+        }
+    }
+}

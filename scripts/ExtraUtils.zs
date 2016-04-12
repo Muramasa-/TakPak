@@ -215,7 +215,7 @@ recipes.addShaped(<ExtraUtilities:paintbrush>, [
 recipes.remove(<ExtraUtilities:drum>);
 recipes.addShaped(<ExtraUtilities:drum>, [
 [<gregtech:gt.metaitem.01:17305>, <ore:ringSteel>, <gregtech:gt.metaitem.01:17305>],
-[<gregtech:gt.metaitem.01:17305>, <ore:pipeHugeSteel>, <gregtech:gt.metaitem.01:17305>],
+[<gregtech:gt.metaitem.01:17305>, <ore:pipeLargeSteel>, <gregtech:gt.metaitem.01:17305>],
 [<gregtech:gt.metaitem.01:17305>, <ore:ringSteel>, <gregtech:gt.metaitem.01:17305>]]);
 
 // --- Watering Can

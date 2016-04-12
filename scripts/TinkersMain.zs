@@ -5,6 +5,7 @@ val forgeBlocks = <ore:forgeBlocks>;
 forgeBlocks.add(<gregtech:gt.blockmetal2:5>);
 forgeBlocks.add(<gregtech:gt.blockmetal1>);
 forgeBlocks.add(<TConstruct:decoration.multibrickmetal:7>);
+forgeBlocks.add(<TConstruct:MetalBlock>);
 
 var forges = [
     <TConstruct:ToolForgeBlock>, <TConstruct:ToolForgeBlock:1>, <TConstruct:ToolForgeBlock:2>, <TConstruct:ToolForgeBlock:3>, <TConstruct:ToolForgeBlock:4>, <TConstruct:ToolForgeBlock:5>, <TConstruct:ToolForgeBlock:6>, <TConstruct:ToolForgeBlock:7>, <TConstruct:ToolForgeBlock:8>, <TConstruct:ToolForgeBlock:9>, <TConstruct:ToolForgeBlock:10>, <TConstruct:ToolForgeBlock:11>, <TConstruct:ToolForgeBlock:12>, <TConstruct:ToolForgeBlock:13>

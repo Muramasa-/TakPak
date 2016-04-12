@@ -107,13 +107,13 @@ recipes.remove(<Forestry:ffarm:5>);
 // --- Tools and Items ---
 
 
-// --- Survivalist´s Pickaxe
+// --- Survivalists Pickaxe
 recipes.remove(<Forestry:bronzePickaxe>);
 
 // --- Pickaxe Kit
 recipes.remove(<Forestry:kitPickaxe>);
 
-// --- Survivalist´s Shovel
+// --- Survivalists Shovel
 recipes.remove(<Forestry:bronzeShovel>);
 
 // --- Shovel Kit
@@ -636,23 +636,23 @@ mods.forestry.Carpenter.addRecipe(60, <liquid:honey> * 5000,
 
 // --- Beealyzer
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576, 
-[<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17057>, <gregtech:gt.metaitem.01:27500>, 
-<gregtech:gt.metaitem.01:17057>, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:17057>, 
-<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17057>, <gregtech:gt.metaitem.01:27500>], 
+[<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17057>, <gregtech:gt.metaitem.01:27305>, 
+<gregtech:gt.metaitem.01:17057>, <gregtech:gt.metaitem.01:32701>, <gregtech:gt.metaitem.01:17057>, 
+<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17057>, <gregtech:gt.metaitem.01:27305>], 
 <minecraft:glass_pane>, <Forestry:beealyzer>);
 
 // --- Treealyzer
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576, 
-[<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17035>, <gregtech:gt.metaitem.01:27500>, 
-<gregtech:gt.metaitem.01:17035>, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:17035> , 
-<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17035>, <gregtech:gt.metaitem.01:27500>], 
+[<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17035>, <gregtech:gt.metaitem.01:27305>, 
+<gregtech:gt.metaitem.01:17035>, <gregtech:gt.metaitem.01:32701>, <gregtech:gt.metaitem.01:17035> , 
+<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17035>, <gregtech:gt.metaitem.01:27305>], 
 <minecraft:glass_pane>, <Forestry:treealyzer>);
 
 // --- Flutterlyzer
 mods.forestry.Carpenter.addRecipe(60, <liquid:molten.redstone> * 576, 
-[<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:27500>, 
-<gregtech:gt.metaitem.01:17300>, <IC2:itemPartCircuit>, <gregtech:gt.metaitem.01:17300>, 
-<gregtech:gt.metaitem.01:27500>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:27500>], 
+[<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:27305>, 
+<gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:32701>, <gregtech:gt.metaitem.01:17300>, 
+<gregtech:gt.metaitem.01:27305>, <gregtech:gt.metaitem.01:17300>, <gregtech:gt.metaitem.01:27305>], 
 <minecraft:glass_pane>, <Forestry:flutterlyzer>);
 
 

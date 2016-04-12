@@ -13,8 +13,15 @@ val bake = <ore:toolBakeware>;
 val juice = <ore:toolJuicer>;
 val WovenCloth = <harvestcraft:wovencottonItem>;
 val String = <minecraft:string>;
-val Cotton = <Natura:barleyFood:3>;
+val Cotton = <ore:cropCotton>;
 
+<ore:cropCotton>.add(<Natura:barleyFood:3>);
+<ore:foodSalt>.remove(<harvestcraft:saltItem>);
+<ore:flourEqualswheat>.remove(<harvestcraft:flourItem>);
+<ore:foodFlour>.remove(<harvestcraft:flourItem>);
+<ore:foodDough>.remove(<harvestcraft:doughItem>);
+recipes.remove(<harvestcraft:flourItem>);
+recipes.remove(<harvestcraft:doughItem>);
 
 // --- Pot
 recipes.remove(<harvestcraft:potItem>);
@@ -132,6 +139,8 @@ Compressor.addRecipe(<harvestcraft:firmtofuItem>, <harvestcraft:silkentofuItem>)
 
 // --- Pressed Wax
 Compressor.addRecipe(<harvestcraft:waxItem>, <harvestcraft:beeswaxItem> * 4);
+
+Compressor.addRecipe(<harvestcraft:bubblywaterItem>, <harvestcraft:freshwaterItem>);
 
 
 

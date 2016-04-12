@@ -166,8 +166,8 @@
         },
 		"pack2":
         {
-            "text" : "2.2.1",
-            "posX" : 41,
+            "text" : "2.2.2",
+            "posX" : 47,
             "posY" : -40,
             "color" : 16777045,
 			"hoverText" : "Wow, such secret",

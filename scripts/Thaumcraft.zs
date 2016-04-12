@@ -9,12 +9,11 @@ NEI.hide(<ThaumicExploration:everburnUrn>);
 mods.thaumcraft.Infusion.removeRecipe(<ThaumicExploration:everburnUrn>);
 
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemResource:2>);
-mods.thaumcraft.Crucible.addRecipe("ENTROPICPROCESSING", <gregtech:gt.metaitem.01:11305>, <gregtech:gt.metaitem.01:11330>, "terra 2, perditio 4");
-//mods.thaumcraft.Crucible.addRecipe("ASPECTS", <gregtech:gt.metaitem.01:11305>, <gregtech:gt.metaitem.01:11330>, "praecantatio 4");
+mods.thaumcraft.Crucible.addRecipe("THAUMIUM", <gregtech:gt.metaitem.01:11330>, <gregtech:gt.metaitem.01:11305>, "praecantatio 4");
 <Thaumcraft:ItemResource:2>.addTooltip(format.darkPurple("Tweaked"));
 
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemResource:17>);
-mods.thaumcraft.Crucible.addRecipe("ELDRITCHMAJOR", <gregtech:gt.metaitem.01:25306>, <Thaumcraft:ItemResource:17>, "tenebrae 8, vacuos 8, alienis 2");
+mods.thaumcraft.Crucible.addRecipe("ELDRITCHMINOR", <Thaumcraft:ItemResource:17>, <gregtech:gt.metaitem.01:25306>, "tenebrae 8, vacuos 8, alienis 2");
 <Thaumcraft:ItemResource:17>.addTooltip(format.darkPurple("Tweaked"));
 
 mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:blockStoneDevice:2>);
@@ -24,13 +23,19 @@ mods.thaumcraft.Arcane.addShaped("INFUSION", <Thaumcraft:blockStoneDevice:2>, "o
 [<Thaumcraft:blockCosmeticSolid:6>, <ore:materialAspectShard>, <Thaumcraft:blockCosmeticSolid:6>]]);
 <Thaumcraft:blockStoneDevice:2>.addTooltip(format.darkPurple("Tweaked"));
 
-mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:ItemBowBone>);
-mods.thaumcraft.Arcane.addShaped("INFUSION", <Thaumcraft:ItemBowBone>, "ordo 32, aer 16",
-[[<TConstruct:bowstring:1>, <TConstruct:toughRod:5>, <gregtech:gt.metaitem.01:29019>],                                      
-[<TConstruct:bowstring:1>, <Thaumcraft:ItemShard:5>, <TConstruct:toughRod:5>],
-[<TConstruct:bowstring:1>, <TConstruct:toughRod:5>, <gregtech:gt.metaitem.01:29019>]]);
-<Thaumcraft:ItemBowBone>.addTooltip(format.darkPurple("Tweaked"));
+//mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:ItemBowBone>);
+//mods.thaumcraft.Arcane.addShaped("INFUSION", <Thaumcraft:ItemBowBone>, "ordo 32, aer 16",
+//[[<TConstruct:bowstring:1>, <TConstruct:toughRod:5>, <gregtech:gt.metaitem.01:29019>],                                      
+//[<TConstruct:bowstring:1>, <Thaumcraft:ItemShard:5>, <TConstruct:toughRod:5>],
+//[<TConstruct:bowstring:1>, <TConstruct:toughRod:5>, <gregtech:gt.metaitem.01:29019>]]);
+//<Thaumcraft:ItemBowBone>.addTooltip(format.darkPurple("Tweaked"));
 
+mods.thaumcraft.Arcane.removeRecipe(<Thaumcraft:ItemBowBone>);
+mods.thaumcraft.Infusion.addRecipe("INFUSION", <minecraft:bow>, [
+<TConstruct:bowstring:1>, <TConstruct:bowstring:1>, <TConstruct:bowstring:1>, <TConstruct:toughRod:5>, <TConstruct:toughRod:5>, <TConstruct:toughRod:5>, 
+<Thaumcraft:ItemShard:5>, <Thaumcraft:ItemShard:5>, <gregtech:gt.metaitem.01:29019>, <gregtech:gt.metaitem.01:29019>], 
+"perditio 32, aer 16", <Thaumcraft:ItemBowBone>, 6);
+<Thaumcraft:ItemBowBone>.addTooltip(format.darkPurple("Tweaked"));
 
 NEI.hide(<ThaumicTinkerer:enchanter>);
 mods.thaumcraft.Infusion.removeRecipe(<ThaumicTinkerer:enchanter>);

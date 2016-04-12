@@ -4,6 +4,7 @@ import mods.gregtech.BlastFurnace;
 import mods.gregtech.FluidExtractor;
 import mods.gregtech.FormingPress;
 import mods.ic2.Canner;
+import mods.ic2.Compressor;
 import mods.nei.NEI;
 
 val Hammer = <ore:craftingToolHardHammer>;
@@ -24,6 +25,8 @@ recipes.remove(<TConstruct:materials:19>);
 recipes.addShapeless(<gregtech:gt.metaitem.01:9032> * 9, [<minecraft:iron_ingot>]);
 
 furnace.remove(<minecraft:coal:1>);
+
+Compressor.addRecipe(<gregtech:gt.metaitem.01:11033>, <gregtech:gt.blockmetal2:5>);
 
 recipes.remove(<gregtech:gt.metaitem.01:32700>);
 recipes.addShapeless(<gregtech:gt.metaitem.01:32700>, [<gregtech:gt.metaitem.01:17305>, <gregtech:gt.blockmachines:2000>, <gregtech:gt.blockmachines:2000>, <gregtech:gt.blockmachines:1240>]);
@@ -64,6 +67,7 @@ recipes.addShaped(cirBasic * 1, [
 
 //Fluid Extractor Recipes
 FluidExtractor.addRecipe(null, <minecraft:ender_pearl>, <liquid:ender> * 50, 10000, 200, 128);
+FluidExtractor.addRecipe(null, <BiomesOPlenty:honeyBlock>, <liquid:for.honey> * 500, 10000, 100, 16);
 
 //Alloy Smelter Recipes
 AlloySmelter.addRecipe(dustEnderium, dustSilver, dustPlatinum, 80, 32);
@@ -73,8 +77,12 @@ recipes.remove(ingotHotEnderium);
 BlastFurnace.addRecipe([ingotHotEnderium], [dustEnderium, plateEnderPearl * 8], 120, 6000, 3000);
 BlastFurnace.addRecipe([<Thaumcraft:ItemShard>], [<gregtech:gt.metaitem.01:2540>, <gregtech:gt.metaitem.01:2540>], 320, 100, 1200);
 
+mods.gregtech.FluidSolidifier.addRecipe(<gregtech:gt.metaitem.01:2817>, <gregtech:gt.metaitem.01:32307>, <liquid:water> * 1000, 400, 2);
+
 vanilla.loot.removeChestLoot("villageBlacksmith", <gregtech:gt.metaitem.01:2067>);
+vanilla.loot.removeChestLoot("villageBlacksmith", <gregtech:gt.metaitem.01:11031>);
 vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:2067>);
+vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:11031>);
 
 //Add Thaumium Cables To MV Components
 <ore:cableGt01AnyCopper>.add(<gregtech:gt.blockmachines:2106>);
@@ -106,3 +114,5 @@ vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:2067>);
 <ore:cableGt08AnnealedCopper>.remove(<gregtech:gt.blockmachines:1389>);
 <ore:cableGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1390>);
 <ore:cableGt12AnnealedCopper>.remove(<gregtech:gt.blockmachines:1390>);
+
+<ore:foodSalt>.add(<gregtech:gt.metaitem.01:2817>);

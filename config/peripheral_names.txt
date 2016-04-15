@@ -1,6 +1,9 @@
 #OpenPeripheral user-friendly names
 #class_name	user_name
+dan200.computercraft.shared.turtle.blocks.TileTurtle	tile_computercraft_turtle_name
+gregtech.api.metatileentity.BaseMetaTileEntity	multimachine_charcoalpile
 lumien.randomthings.TileEntities.TileEntityPlayerInterface	player_interface
+mcp.mobius.betterbarrels.common.blocks.TileEntityBarrel	mcp_mobius_betterbarrel
 net.minecraft.block.BlockJukebox$TileEntityJukebox	record_player
 net.minecraft.tileentity.TileEntityBeacon	beacon
 net.minecraft.tileentity.TileEntityBrewingStand	brewing_stand

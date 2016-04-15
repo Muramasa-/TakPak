@@ -4,13 +4,5 @@ Interfaces:
 Constructors: 
 	public vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement()
 Modifiers using this: 
-	class vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement [key=, stacks=[], effectIndex=0, random=java.util.Random@6ea19cbf, ]
-********************************
-********************************
-Class: vexatos.tgregworks.integration.iguanatweakstconstruct.ModLimitedTGregRepair
-Interfaces: 
-Constructors: 
-	public vexatos.tgregworks.integration.iguanatweakstconstruct.ModLimitedTGregRepair()
-Modifiers using this: 
-	class vexatos.tgregworks.integration.iguanatweakstconstruct.ModLimitedTGregRepair [key=, stacks=[], effectIndex=0, random=java.util.Random@6ea19cbf, ]
+	class vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement [key=, stacks=[], effectIndex=0, random=java.util.Random@4ae508fe, ]
 ********************************

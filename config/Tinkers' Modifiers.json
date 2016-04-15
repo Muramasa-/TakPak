@@ -5,8 +5,8 @@
 	"itemComment":"The other thing to note is that items are defined using a dictionary ({}). There, define 'item' using a string and 'damage' using either an int or a string for a wildcard. Stack size is ignored",
 	"addModifiers":[
 		{
-			"class":"tconstruct.modifiers.tools.ModRedstone",
-			"arg0":0,
+			"class":"tconstruct.modifiers.tools.ModWindup",
+			"arg0":2,
 			"arg1":[
 				{
 					"item":"minecraft:sugar"
@@ -14,7 +14,24 @@
 			],
 			"arg2":[
 				1
-			]
+			],
+			"arg3":"Haste",
+			"arg4":50
+		},
+		{
+			"class":"org.abimon.mods.minecraft.tmodifiers.modifiers.ModCustomHaste",
+			"arg0":2,
+			"arg1":[
+				{
+					"item":"gregtech:gt.metaitem.01",
+					"damage":2502
+				}
+			],
+			"arg2":[
+				1
+			],
+			"arg3":"Haste",
+			"arg4":50
 		},
 		{
 			"class":"tconstruct.modifiers.tools.ModReinforced",

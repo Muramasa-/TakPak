@@ -13,7 +13,7 @@ val File = <ore:craftingToolFile>;
 val Screwdriver = <ore:craftingToolScrewdriver>;
 
 //EnderIO Items
-var electricalSteel = <EnderIO:itemAlloy>;
+var electricalSteel = <EnderIO:itemAlloy:0>;
 var energeticAlloy = <EnderIO:itemAlloy:1>;
 var vibrantAlloy = <EnderIO:itemAlloy:2>;
 var redstoneAlloy = <EnderIO:itemAlloy:3>;
@@ -144,30 +144,20 @@ AlloySmelter.addRecipe(fusedQuartz, quartz * 4, glass * 4, 80, 32);
 AlloySmelter.addRecipe(clearQuartz, sand, sand, 80, 32);
 AlloySmelter.addRecipe(lightFusedQuartz, fusedQuartz, dustGlowstone * 4, 80, 32);
 AlloySmelter.addRecipe(lightClearQuartz, clearQuartz, dustGlowstone * 4, 80, 32);
+AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:4>, fusedQuartz, <minecraft:dye> * 4, 80, 32);
+AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:5>, clearQuartz, <minecraft:dye> * 4, 80, 32);
 
-//Blast Furnace Recipes
-//BlastFurnace.addRecipe([electricalSteel * 4], [ingotSteel * 4, ingotSilicon], 1700, 120, 1700);
-//BlastFurnace.addRecipe([energeticAlloy * 4], [ingotElectrum * 4, ingotRedAlloy], 1700, 120, 1700);
-//BlastFurnace.addRecipe([vibrantAlloy], [energeticAlloy, plateEnderPearl], 1700, 120, 2000);
-//BlastFurnace.addRecipe([redstoneAlloy * 4], [ingotRedAlloy * 4, ingotSilicon], 1700, 120, 1700);
-//BlastFurnace.addRecipe([conductiveIron * 4], [ingotSteel * 4, ingotRedAlloy], 1700, 120, 1700);
-//BlastFurnace.addRecipe([pulsatingIron], [conductiveIron, plateEnderPearl], 1700, 120, 1700);
-AlloySmelter.addRecipe(<EnderIO:itemAlloy:5>, <EnderIO:itemAlloy> * 2, <minecraft:ender_pearl> * 4, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:itemAlloy:4>, <EnderIO:itemAlloy> * 4, <minecraft:redstone> * 8, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:itemAlloy:1>, <EnderIO:itemAlloy:4> * 2, <minecraft:glowstone_dust> * 4, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:itemAlloy:2>, <EnderIO:itemAlloy:1>, <minecraft:ender_pearl>, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:itemAlloy:6>, <gregtech:gt.metaitem.01:11334> * 4, <minecraft:obsidian>, 180, 128);
 AlloySmelter.addRecipe(<EnderIO:itemPowderIngot:6>, <gregtech:gt.metaitem.01:11085>, <minecraft:ender_pearl>, 180, 128);
 AlloySmelter.addRecipe(<gregtech:gt.metaitem.01:11321>, <EnderIO:itemPowderIngot:6>, <gregtech:gt.metaitem.01:2843> * 2, 180, 128);
 
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz>, <gregtech:gt.metaitem.01:17516> * 4, null, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:2>, <gregtech:gt.metaitem.01:17516> * 4, <minecraft:glowstone_dust> * 4, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:2>, <EnderIO:blockFusedQuartz>, <minecraft:glowstone>, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:1> * 2, <minecraft:sand>, null, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:1> * 2, <minecraft:sand:1>, null, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <minecraft:sand>, <minecraft:glowstone_dust> * 4, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <minecraft:sand:1>, <minecraft:glowstone_dust> * 4, 180, 128);
-AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <EnderIO:blockFusedQuartz:1>, <minecraft:glowstone_dust> * 4, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz>, <gregtech:gt.metaitem.01:17516> * 4, null, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:2>, <gregtech:gt.metaitem.01:17516> * 4, <minecraft:glowstone_dust> * 4, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:2>, <EnderIO:blockFusedQuartz>, <minecraft:glowstone>, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:1> * 2, <minecraft:sand>, null, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:1> * 2, <minecraft:sand:1>, null, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <minecraft:sand>, <minecraft:glowstone_dust> * 4, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <minecraft:sand:1>, <minecraft:glowstone_dust> * 4, 180, 128);
+//AlloySmelter.addRecipe(<EnderIO:blockFusedQuartz:3>, <EnderIO:blockFusedQuartz:1>, <minecraft:glowstone_dust> * 4, 180, 128);
 
 // Assembler
 recipes.remove(<EnderIO:itemLiquidConduit>);
@@ -271,7 +261,7 @@ NEI.hide(<EnderIO:itemPowderIngot:3>);
 <ore:dustTin>.remove(<EnderIO:itemPowderIngot:4>);
 NEI.hide(<EnderIO:itemPowderIngot:4>);
 <ore:dustObsidian>.remove(<EnderIO:itemPowderIngot:7>);
-NEI.hide(<EnderIO:itemAlloy:3>);
+//NEI.hide(<EnderIO:itemAlloy:3>);
 
 recipes.remove(<EnderIO:item.darkSteel_helmet>);
 NEI.hide(<EnderIO:item.darkSteel_helmet>);

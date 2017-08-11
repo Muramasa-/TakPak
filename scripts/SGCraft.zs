@@ -84,7 +84,7 @@ recipes.addShaped(<SGCraft:ccInterface>, [
 [<gregtech:gt.blockmachines:1700>,  <gregtech:gt.metaitem.01:17308>,  <gregtech:gt.blockmachines:1700>]]);
 
 recipes.remove(<SGCraft:sgChevronUpgrade>);
-ImplosionCompressor.addRecipe([<SGCraft:sgChevronUpgrade>, <Thaumcraft:ItemEldritchObject:3>], <SGCraft:sgControllerCrystal>, 8);
+ImplosionCompressor.addRecipe([<SGCraft:sgChevronUpgrade>, <gregtech:gt.metaitem.01:816> * 16], <SGCraft:sgControllerCrystal>, 8);
 
 recipes.remove(<SGCraft:rfPowerUnit>);
 NEI.hide(<SGCraft:rfPowerUnit>);

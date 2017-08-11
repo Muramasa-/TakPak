@@ -2,6 +2,7 @@ import mods.nei.NEI;
 import mods.gregtech.AlloySmelter;
 import mods.gregtech.ImplosionCompressor;
 import mods.gregtech.Assembler;
+import mods.ic2.Compressor;
 
 val HHammer = <ore:craftingToolHardHammer>;
 val Wrench = <ore:craftingToolWrench>;
@@ -300,7 +301,8 @@ furnace.remove(<ExtraUtilities:block_bedrockium>);
 // --- Bedrockium Block
 recipes.remove(BedrockiumBlock);
 recipes.remove(<ExtraUtilities:bedrockiumIngot>);
-ImplosionCompressor.addRecipe(BedrockiumBlock, BedrockiumIngot * 9, 8);
+recipes.addShapeless(<ExtraUtilities:bedrockiumIngot> * 9, [BedrockiumBlock]);
+ImplosionCompressor.addRecipe(BedrockiumBlock, <ExtraUtilities:cobblestone_compressed:7>, 8);
 
 AlloySmelter.addRecipe(burntQuartz, <minecraft:quartz_block>, <gregtech:gt.metaitem.01:2816>, 80, 64);
 AlloySmelter.addRecipe(<ExtraUtilities:decorativeBlock2:5>, <gregtech:gt.metaitem.01:2890> * 4, <gregtech:gt.metaitem.01:2804> * 4, 200, 8);

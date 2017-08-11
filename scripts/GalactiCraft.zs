@@ -4,31 +4,21 @@ import mods.gregtech.Assembler;
 import mods.gregtech.ArcFurnace;
 import mods.gregtech.Extruder;
 
-val CompressedAl = <GTAddons:compAl>;
-val CompressedIron = <GTAddons:compIron>;
-val CompressedSteel = <GTAddons:compSteel>;
-val CompressedBronze = <GTAddons:compBronze>;
-val CompressedTin = <GTAddons:compTin>;
-val CompressedCopper = <GTAddons:compCopper>;
-val CompressedTi = <GTAddons:compTi>;
-var CompressedMIron = <GTAddons:compMIron>;
-var CompressedDesh = <GTAddons:compDesh>;
-
-var doubleIron = <gregtech:gt.metaitem.01:13032>;
-var doubleCopper = <gregtech:gt.metaitem.01:13035>;
-var doubleTin = <gregtech:gt.metaitem.01:13057>;
-var doubleBronze = <gregtech:gt.metaitem.01:13300>;
-var doubleAluminum = <gregtech:gt.metaitem.01:13019>;
-var doubleSteel = <gregtech:gt.metaitem.01:13305>;
-var doubleTitanium = <gregtech:gt.metaitem.01:13028>;
-var doubleMeteoricIron = <gregtech:gt.metaitem.01:13340>;
-var doubleDesh = <gregtech:gt.metaitem.01:13884>;
+val CompressedAl = <GalacticraftCore:item.basicItem:8>;
+val CompressedIron = <GalacticraftCore:item.basicItem:11>;
+val CompressedSteel = <GalacticraftCore:item.basicItem:9>;
+val CompressedBronze = <GalacticraftCore:item.basicItem:10>;
+val CompressedTin = <GalacticraftCore:item.basicItem:7>;
+val CompressedCopper = <GalacticraftCore:item.basicItem:6>;
+val CompressedTi = <GalacticraftMars:item.itemBasicAsteroids:6>;
+var CompressedMIron = <GalacticraftCore:item.meteoricIronIngot:1>;
+var CompressedDesh = <GalacticraftMars:item.null:5>;
 
 var heavyPlate1 = <GalacticraftCore:item.heavyPlating>;
 var heavyPlate2 = <GalacticraftMars:item.null:3>;
 var heavyPlate3 = <GalacticraftMars:item.itemBasicAsteroids>;
 
-var heavyIngot1 = <GTAddons:heavyIngot1>;
+var heavyIngot1 = <gregtech:gt.metaitem.01:32462>;
 var heavyIngot2 = <gregtech:gt.metaitem.01:32463>;
 var heavyIngot3 = <gregtech:gt.metaitem.01:32464>;
 
@@ -77,26 +67,10 @@ var mvMachineHull = <gregtech:gt.blockmachines:12>;
 var mvMotor = <gregtech:gt.metaitem.01:32601>;
 
 // --- GregTech Recipes
-//Implosion Compressor
-//Heavy Duty Plates
-//ImplosionCompressor.addRecipe([heavyPlate1, tinyTitanDust * 2], heavyIngot1, 8);
-//ImplosionCompressor.addRecipe([heavyPlate2, tinyStainlessDust * 2], heavyIngot2, 8);
-//ImplosionCompressor.addRecipe([heavyPlate3, tinyTungSteelDust * 2], heavyIngot3, 8);
-
-//Compressed Plates
-//ImplosionCompressor.addRecipe([CompressedIron, darkAshes], doubleIron, 2);
-//ImplosionCompressor.addRecipe([CompressedCopper, darkAshes], doubleCopper, 2);
-//ImplosionCompressor.addRecipe([CompressedTin, darkAshes], doubleTin, 2);
-//ImplosionCompressor.addRecipe([CompressedBronze, darkAshes], doubleBronze, 2);
-//ImplosionCompressor.addRecipe([CompressedAl, darkAshes], doubleAluminum, 2);
-//ImplosionCompressor.addRecipe([CompressedSteel, darkAshes], doubleSteel, 2);
-//ImplosionCompressor.addRecipe([CompressedTi, darkAshes], doubleTitanium, 2);
-//ImplosionCompressor.addRecipe([CompressedMIron, darkAshes], doubleMeteoricIron, 2);
-//ImplosionCompressor.addRecipe([CompressedDesh, darkAshes], doubleDesh, 2);
 
 //Assembler Recipes
-Assembler.addRecipe(heavyIngot2, heavyPlate1, CompressedMIron * 2, <liquid:molten.tungstensteel> * 72, 600, 256);
-Assembler.addRecipe(heavyIngot3, heavyPlate2, CompressedDesh * 2, <liquid:molten.osmium> * 144, 1200, 512);
+//Assembler.addRecipe(heavyIngot2, heavyPlate1, CompressedMIron * 2, <liquid:molten.tungstensteel> * 72, 600, 256);
+//Assembler.addRecipe(heavyIngot3, heavyPlate2, CompressedDesh * 2, <liquid:molten.osmium> * 144, 1200, 512);
 // --- Glowstone Torch
 recipes.remove(<GalacticraftCore:tile.glowstoneTorch>);
 Assembler.addRecipe(<GalacticraftCore:tile.glowstoneTorch>, <minecraft:redstone_torch>, <minecraft:glowstone_dust>, 200, 16);
@@ -156,13 +130,6 @@ recipes.remove(<GalacticraftCore:item.canister:1>);
 Extruder.addRecipe(<GalacticraftCore:item.canister:1>, <GalacticraftCore:item.basicItem:6>, <gregtech:gt.metaitem.01:32354> * 0, 120, 32);
 recipes.remove(SteelPole);
 Extruder.addRecipe(SteelPole, CompressedSteel * 2, <gregtech:gt.metaitem.01:32352> * 0, 600, 32);
-
-// --- GregTech Shaped Recipes
-recipes.remove(heavyIngot1);
-recipes.addShaped(heavyIngot1, [
-[<gregtech:gt.metaitem.01:26028>, HHammer, <gregtech:gt.metaitem.01:26028>],
-[CompressedBronze, CompressedAl, CompressedSteel],
-[<gregtech:gt.metaitem.01:26028>, null, <gregtech:gt.metaitem.01:26028>]]);
 
 // --- Galacticraft Recipes
 
@@ -605,46 +572,6 @@ var oreIron2 = <GalacticraftMars:tile.asteroidsBlock:5>;
 <ore:oreIron>.remove(oreIron2);
 <ore:oreAnyIron>.remove(oreIron2);
 NEI.hide(oreIron2);
-
-//GT Heavy Ingots
-//recipes.remove(<gregtech:gt.metaitem.01:32462>);
-//NEI.hide(<gregtech:gt.metaitem.01:32462>);
-//<gregtech:gt.metaitem.01:32462>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-//recipes.remove(<gregtech:gt.metaitem.01:32463>);
-//NEI.hide(<gregtech:gt.metaitem.01:32463>);
-//<gregtech:gt.metaitem.01:32463>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-//recipes.remove(<gregtech:gt.metaitem.01:32464>);
-//NEI.hide(<gregtech:gt.metaitem.01:32464>);
-//<gregtech:gt.metaitem.01:32464>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-
-//GC Comp Plates
-recipes.remove(<GalacticraftCore:item.basicItem:11>);
-NEI.hide(<GalacticraftCore:item.basicItem:11>);
-<GalacticraftCore:item.basicItem:11>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.basicItem:6>);
-NEI.hide(<GalacticraftCore:item.basicItem:6>);
-<GalacticraftCore:item.basicItem:6>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.basicItem:7>);
-NEI.hide(<GalacticraftCore:item.basicItem:7>);
-<GalacticraftCore:item.basicItem:7>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.basicItem:10>);
-NEI.hide(<GalacticraftCore:item.basicItem:10>);
-<GalacticraftCore:item.basicItem:10>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.basicItem:8>);
-NEI.hide(<GalacticraftCore:item.basicItem:8>);
-<GalacticraftCore:item.basicItem:8>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.basicItem:9>);
-NEI.hide(<GalacticraftCore:item.basicItem:9>);
-<GalacticraftCore:item.basicItem:9>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftMars:item.itemBasicAsteroids:6>);
-NEI.hide(<GalacticraftMars:item.itemBasicAsteroids:6>);
-<GalacticraftMars:item.itemBasicAsteroids:6>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftCore:item.meteoricIronIngot:1>);
-NEI.hide(<GalacticraftCore:item.meteoricIronIngot:1>);
-<GalacticraftCore:item.meteoricIronIngot:1>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
-recipes.remove(<GalacticraftMars:item.null:5>);
-NEI.hide(<GalacticraftMars:item.null:5>);
-<GalacticraftMars:item.null:5>.addTooltip(format.darkRed("Tell Tak if you see this in a recipe!"));
 
 recipes.remove(<GalacticraftMars:item.null:1>);
 NEI.hide(<GalacticraftMars:item.null:1>);

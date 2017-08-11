@@ -17,60 +17,60 @@ val ClearPane = <TConstruct:GlassPane>;
 recipes.remove(<thaumicenergistics:storage.essentia>);
 recipes.addShaped(<thaumicenergistics:storage.essentia>, [
 [HHammer, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, Screwdriver]]);
 // - Alternative Recipe
 recipes.addShaped(<thaumicenergistics:storage.essentia>, [
 [Screwdriver, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, HHammer]]);
 
 // --- Storage Cell - 4K
 recipes.remove(<thaumicenergistics:storage.essentia:1>);
 recipes.addShaped(<thaumicenergistics:storage.essentia:1>, [
 [HHammer, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:1>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:1>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, Screwdriver]]);
 // - Alternative Recipe
 recipes.addShaped(<thaumicenergistics:storage.essentia:1>, [
 [Screwdriver, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:1>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:1>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, HHammer]]);
 
 // --- Storage Cell - 16K
 recipes.remove(<thaumicenergistics:storage.essentia:2>);
 recipes.addShaped(<thaumicenergistics:storage.essentia:2>, [
 [HHammer, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:2>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:2>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, Screwdriver]]);
 // - Alternative Recipe
 recipes.addShaped(<thaumicenergistics:storage.essentia:2>, [
 [Screwdriver, CertusPlate, QuartziteScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:2>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:2>, <TakPakCore:VoidMetalPlate>],
 [QuartziteScrew, <gregtech:gt.metaitem.01:29356>, HHammer]]);
 
 // --- Storage Cell - 64K
 recipes.remove(<thaumicenergistics:storage.essentia:3>);
 recipes.addShaped(<thaumicenergistics:storage.essentia:3>, [
 [HHammer, CertusPlate, NQuartzScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:3>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:3>, <TakPakCore:VoidMetalPlate>],
 [NQuartzScrew, <gregtech:gt.metaitem.01:29356>, Screwdriver]]);
 // - Alternative Recipe
 recipes.addShaped(<thaumicenergistics:storage.essentia:3>, [
 [Screwdriver, CertusPlate, NQuartzScrew],
-[<GTAddons:VoidMetalPlate>, <thaumicenergistics:storage.component:3>, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, <thaumicenergistics:storage.component:3>, <TakPakCore:VoidMetalPlate>],
 [NQuartzScrew, <gregtech:gt.metaitem.01:29356>, HHammer]]);
 
 // --- Universal Storage Housing
 recipes.remove(<thaumicenergistics:storage.casing>);
 recipes.addShaped(<thaumicenergistics:storage.casing>, [
 [HHammer, CertusPlate, CertusScrew],
-[<GTAddons:VoidMetalPlate>, ClearPane, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, ClearPane, <TakPakCore:VoidMetalPlate>],
 [CertusScrew, <gregtech:gt.metaitem.01:29356>, Screwdriver]]);
 // - Alternative Recipe
 recipes.addShaped(<thaumicenergistics:storage.casing>, [
 [Screwdriver, CertusPlate, CertusScrew],
-[<GTAddons:VoidMetalPlate>, ClearPane, <GTAddons:VoidMetalPlate>],
+[<TakPakCore:VoidMetalPlate>, ClearPane, <TakPakCore:VoidMetalPlate>],
 [CertusScrew, <gregtech:gt.metaitem.01:29356>, HHammer]]);
 
 val essentiaComp = <ore:essentiaComp>;
@@ -80,25 +80,25 @@ essentiaComp.add(<Thaumcraft:ItemResource:14>);
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:storage.component>);
 mods.thaumcraft.Arcane.addShaped("VOIDMETAL", <thaumicenergistics:storage.component>, "ordo 1, ignis 2",
 [[BasicCircuit, <ore:essentiaComp>, BasicCircuit],
-[<ore:essentiaComp>, <GTAddons:EssentiaProcessor1>, <ore:essentiaComp>],
+[<ore:essentiaComp>, <TakPakCore:EssentiaProcessor1>, <ore:essentiaComp>],
 [BasicCircuit, <ore:essentiaComp>, BasicCircuit]]);
 
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:storage.component:1>);
 mods.thaumcraft.Arcane.addShaped("VOIDMETAL", <thaumicenergistics:storage.component:1>, "ordo 1, ignis 2",
 [[GoodCircuit, <ore:essentiaComp>, GoodCircuit],
-[<ore:essentiaComp>, <GTAddons:EssentiaProcessor1>, <ore:essentiaComp>],
+[<ore:essentiaComp>, <TakPakCore:EssentiaProcessor1>, <ore:essentiaComp>],
 [GoodCircuit, <ore:essentiaComp>, GoodCircuit]]);
 
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:storage.component:2>);
 mods.thaumcraft.Arcane.addShaped("VOIDMETAL", <thaumicenergistics:storage.component:2>, "ordo 1, ignis 2",
 [[AdvCircuit, <ore:essentiaComp>, AdvCircuit],
-[<ore:essentiaComp>, <GTAddons:EssentiaProcessor2>, <ore:essentiaComp>],
+[<ore:essentiaComp>, <TakPakCore:EssentiaProcessor2>, <ore:essentiaComp>],
 [AdvCircuit, <ore:essentiaComp>, AdvCircuit]]);
 
 mods.thaumcraft.Arcane.removeRecipe(<thaumicenergistics:storage.component:3>);
 mods.thaumcraft.Arcane.addShaped("VOIDMETAL", <thaumicenergistics:storage.component:3>, "ordo 1, ignis 2",
 [[<gregtech:gt.metaitem.01:32705>, <ore:essentiaComp>, <gregtech:gt.metaitem.01:32705>],
-[<ore:essentiaComp>, <GTAddons:EssentiaProcessor2>, <ore:essentiaComp>],
+[<ore:essentiaComp>, <TakPakCore:EssentiaProcessor2>, <ore:essentiaComp>],
 [<gregtech:gt.metaitem.01:32705>, <ore:essentiaComp>, <gregtech:gt.metaitem.01:32705>]]);
 
 

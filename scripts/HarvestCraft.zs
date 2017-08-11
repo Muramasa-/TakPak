@@ -16,7 +16,10 @@ val String = <minecraft:string>;
 val Cotton = <ore:cropCotton>;
 
 <ore:cropCotton>.add(<Natura:barleyFood:3>);
+<ore:foodSalt>.add(<gregtech:gt.metaitem.01:2944>);
 <ore:foodSalt>.remove(<harvestcraft:saltItem>);
+<ore:dustSalt>.remove(<harvestcraft:saltItem>);
+<ore:itemSalt>.remove(<harvestcraft:saltItem>);
 <ore:flourEqualswheat>.remove(<harvestcraft:flourItem>);
 <ore:foodFlour>.remove(<harvestcraft:flourItem>);
 <ore:foodDough>.remove(<harvestcraft:doughItem>);
@@ -116,7 +119,8 @@ NEI.hide(<harvestcraft:mixingbowlItem>);
 recipes.remove(<harvestcraft:mortarandpestleItem>);
 mortar.remove(<harvestcraft:mortarandpestleItem>);
 NEI.hide(<harvestcraft:mortarandpestleItem>);
-
+recipes.remove(<harvestcraft:saltItem>);
+NEI.hide(<harvestcraft:saltItem>);
 
 recipes.remove(<harvestcraft:sink>);
 NEI.hide(<harvestcraft:sink>);
@@ -126,6 +130,8 @@ recipes.remove(<harvestcraft:sink:2>);
 NEI.hide(<harvestcraft:sink:2>);
 recipes.remove(<harvestcraft:sink:3>);
 NEI.hide(<harvestcraft:sink:3>);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2817>, [<harvestcraft:spamcompressedsaltBlockalt>]);
+NEI.hide(<harvestcraft:spamcompressedsaltBlockalt>);
 
 // --- Compressor Recipes ---
 

@@ -188,20 +188,36 @@ mods.thaumcraft.Arcane.addShaped("SOULFRAME", <ExtraBees:hiveFrame.soul>, "ordo 
 mods.thaumcraft.Research.addArcanePage("SOULFRAME", <ExtraBees:hiveFrame.soul>);
 mods.thaumcraft.Warp.addToResearch("SOULFRAME", 1);
 
-// --- Macerator Recipes ---
-
-
-// --- Small Emerald Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:500>, <ExtraBees:misc:1>);
-
-// --- Small Diamond Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:501>, <ExtraBees:misc:2>);
-
-// --- Small Ruby Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:502>, <ExtraBees:misc:3>);
-
-// --- Small Sapphire Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:503>, <ExtraBees:misc:4>);
-
-// --- Small Lapis Dust
-Macerator.addRecipe(<gregtech:gt.metaitem.01:526>, <ExtraBees:misc:5>);
+//Purge old bee comb produce
+recipes.removeShapeless(<minecraft:diamond>, [<ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>, <ExtraBees:misc:1>]);
+recipes.removeShapeless(<minecraft:emerald>, [<ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>, <ExtraBees:misc:2>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2032>, [<ExtraBees:misc:6>, <ExtraBees:misc:6>, <ExtraBees:misc:6>, <ExtraBees:misc:6>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2086>, [<ExtraBees:misc:7>, <ExtraBees:misc:7>, <ExtraBees:misc:7>, <ExtraBees:misc:7>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2054>, [<ExtraBees:misc:8>, <ExtraBees:misc:8>, <ExtraBees:misc:8>, <ExtraBees:misc:8>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2085>, [<ExtraBees:misc:9>, <ExtraBees:misc:9>, <ExtraBees:misc:9>, <ExtraBees:misc:9>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2035>, [<ExtraBees:misc:10>, <ExtraBees:misc:10>, <ExtraBees:misc:10>, <ExtraBees:misc:10>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2057>, [<ExtraBees:misc:11>, <ExtraBees:misc:11>, <ExtraBees:misc:11>, <ExtraBees:misc:11>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2034>, [<ExtraBees:misc:12>, <ExtraBees:misc:12>, <ExtraBees:misc:12>, <ExtraBees:misc:12>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2089>, [<ExtraBees:misc:13>, <ExtraBees:misc:13>, <ExtraBees:misc:13>, <ExtraBees:misc:13>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2036>, [<ExtraBees:misc:14>, <ExtraBees:misc:14>, <ExtraBees:misc:14>, <ExtraBees:misc:14>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2028>, [<ExtraBees:misc:15>, <ExtraBees:misc:15>, <ExtraBees:misc:15>, <ExtraBees:misc:15>]);
+recipes.removeShapeless(<gregtech:gt.metaitem.01:2081>, [<ExtraBees:misc:16>, <ExtraBees:misc:16>, <ExtraBees:misc:16>, <ExtraBees:misc:16>]);
+NEI.hide(<ExtraBees:misc:1>);
+NEI.hide(<ExtraBees:misc:2>);
+NEI.hide(<ExtraBees:misc:3>);
+NEI.hide(<ExtraBees:misc:4>);
+NEI.hide(<ExtraBees:misc:5>);
+NEI.hide(<ExtraBees:misc:6>);
+NEI.hide(<ExtraBees:misc:7>);
+NEI.hide(<ExtraBees:misc:8>);
+NEI.hide(<ExtraBees:misc:9>);
+NEI.hide(<ExtraBees:misc:10>);
+NEI.hide(<ExtraBees:misc:11>);
+NEI.hide(<ExtraBees:misc:12>);
+NEI.hide(<ExtraBees:misc:13>);
+NEI.hide(<ExtraBees:misc:14>);
+NEI.hide(<ExtraBees:misc:15>);
+NEI.hide(<ExtraBees:misc:16>);
+NEI.hide(<ExtraBees:misc:17>);
+NEI.hide(<ExtraBees:misc:18>);
+NEI.hide(<ExtraBees:misc:26>);

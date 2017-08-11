@@ -97,8 +97,8 @@ val QuartzGlass = <appliedenergistics2:tile.BlockQuartzGlass>;
 val VibrantQGlass =<appliedenergistics2:tile.BlockQuartzLamp>;
 val SlabCTable = <TConstruct:CraftingSlab>;
 val Pattern = <appliedenergistics2:item.ItemMultiMaterial:52>;
-val ClearPane = <TConstruct:GlassPane>;
-val ClearGlass = <TConstruct:GlassBlock>;
+val ClearPane = <minecraft:glass_pane>;
+val ClearGlass = <minecraft:glass>;
 val GlowstonePlate = <ore:plateGlowstone>;
 val GlowstoneDust = <ore:dustGlowstone>;
 
@@ -596,25 +596,25 @@ recipes.addShaped(UStorageHousing, [
 // --- Storage Cell Component - 1K
 recipes.addShaped(StorageComponent1K, [
 [BasicCircuit, FluixDust, BasicCircuit],
-[FluixDust, <GTAddons:ItemProcessor1>, FluixDust],
+[FluixDust, <TakPakCore:ItemProcessor1>, FluixDust],
 [BasicCircuit, FluixDust, BasicCircuit]]);
 
 // --- Storage Cell Component - 4K
 recipes.addShaped(StorageComponent4K, [
 [GoodCircuit, StorageComponent1K, GoodCircuit],
-[StorageComponent1K, <GTAddons:ItemProcessor1>, StorageComponent1K],
+[StorageComponent1K, <TakPakCore:ItemProcessor1>, StorageComponent1K],
 [GoodCircuit, StorageComponent1K, GoodCircuit]]);
 
 // --- Storage Cell Component - 16K
 recipes.addShaped(StorageComponent16K, [
 [AdvCircuit, StorageComponent4K, AdvCircuit],
-[StorageComponent4K, <GTAddons:ItemProcessor2>, StorageComponent4K],
+[StorageComponent4K, <TakPakCore:ItemProcessor2>, StorageComponent4K],
 [AdvCircuit, StorageComponent4K, AdvCircuit]]);
 
 // --- Storage Cell Component - 64K
 recipes.addShaped(StorageComponent64K, [
 [<gregtech:gt.metaitem.01:32705>, StorageComponent16K, <gregtech:gt.metaitem.01:32705>],
-[StorageComponent16K, <GTAddons:ItemProcessor2>, StorageComponent16K],
+[StorageComponent16K, <TakPakCore:ItemProcessor2>, StorageComponent16K],
 [<gregtech:gt.metaitem.01:32705>, StorageComponent16K, <gregtech:gt.metaitem.01:32705>]]);
 
 

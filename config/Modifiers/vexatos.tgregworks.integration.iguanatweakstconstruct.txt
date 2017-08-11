@@ -4,5 +4,5 @@ Interfaces:
 Constructors: 
 	public vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement()
 Modifiers using this: 
-	class vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement [key=, stacks=[], effectIndex=0, random=java.util.Random@4ae508fe, ]
+	class vexatos.tgregworks.integration.iguanatweakstconstruct.ModTGregPartReplacement [key=, stacks=[], effectIndex=0, random=java.util.Random@77bd6597, ]
 ********************************

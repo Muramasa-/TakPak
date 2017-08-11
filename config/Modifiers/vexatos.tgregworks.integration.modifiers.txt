@@ -4,5 +4,5 @@ Interfaces:
 Constructors: 
 	public vexatos.tgregworks.integration.modifiers.ModTGregRepair()
 Modifiers using this: 
-	class vexatos.tgregworks.integration.modifiers.ModTGregRepair [key=, stacks=[], effectIndex=0, random=java.util.Random@4ae508fe, ]
+	class vexatos.tgregworks.integration.modifiers.ModTGregRepair [key=TGregRepair, stacks=[], effectIndex=0, random=java.util.Random@77bd6597, ]
 ********************************

@@ -11,6 +11,7 @@ mods.thaumcraft.Infusion.removeRecipe(<ThaumicExploration:everburnUrn>);
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemResource:2>);
 mods.thaumcraft.Crucible.addRecipe("THAUMIUM", <gregtech:gt.metaitem.01:11330>, <gregtech:gt.metaitem.01:11305>, "praecantatio 4");
 <Thaumcraft:ItemResource:2>.addTooltip(format.darkPurple("Tweaked"));
+mods.thaumcraft.Research.refreshResearchRecipe("THAUMIUM");
 
 mods.thaumcraft.Crucible.removeRecipe(<Thaumcraft:ItemResource:17>);
 mods.thaumcraft.Crucible.addRecipe("ELDRITCHMINOR", <Thaumcraft:ItemResource:17>, <gregtech:gt.metaitem.01:25306>, "tenebrae 8, vacuos 8, alienis 2");
@@ -68,28 +69,28 @@ mods.thaumcraft.Aspects.remove(<minecraft:wooden_hoe>, "instrementum 20");
 
 recipes.remove(<Thaumcraft:ItemShovelThaumium>);
 recipes.addShaped(<Thaumcraft:ItemShovelThaumium>, [
-[null, <TConstruct:shovelHead:31>, null],
+[null, <gregtech:gt.metaitem.02:2330>, null],
 [File, <ore:stickWood>, Hammer],
 [null, <ore:stickWood>, null]]);
 <Thaumcraft:ItemShovelThaumium>.addTooltip(format.darkPurple("Tweaked"));
 
 recipes.remove(<Thaumcraft:ItemPickThaumium>);
 recipes.addShaped(<Thaumcraft:ItemPickThaumium>, [
-[null, <TConstruct:pickaxeHead:31>, null],
+[null, <gregtech:gt.metaitem.02:1330>, null],
 [File, <ore:stickWood>, Hammer],
 [null, <ore:stickWood>, null]]);
 <Thaumcraft:ItemPickThaumium>.addTooltip(format.darkPurple("Tweaked"));
 
 recipes.remove(<Thaumcraft:ItemAxeThaumium>);
 recipes.addShaped(<Thaumcraft:ItemAxeThaumium>, [
-[null, <TConstruct:hatchetHead:31>, null],
+[null, <gregtech:gt.metaitem.02:3330>, null],
 [File, <ore:stickWood>, Hammer],
 [null, <ore:stickWood>, null]]);
 <Thaumcraft:ItemAxeThaumium>.addTooltip(format.darkPurple("Tweaked"));
 
 recipes.remove(<Thaumcraft:ItemSwordThaumium>);
 recipes.addShaped(<Thaumcraft:ItemSwordThaumium>, [
-[null, <TConstruct:swordBlade:31>, null],
+[null, <gregtech:gt.metaitem.02:330>, null],
 [File, <ore:stickWood>, Hammer],
 [null, <ore:stickWood>, null]]);
 <Thaumcraft:ItemSwordThaumium>.addTooltip(format.darkPurple("Tweaked"));
@@ -98,6 +99,18 @@ mods.thaumcraft.Infusion.removeRecipe(<ThaumicTinkerer:ichorPouch>);
 mods.thaumcraft.Infusion.addRecipe("ICHOR", <Thaumcraft:FocusPouch>, [
 <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:FocusPortableHole>, <gregtech:gt.metaitem.02:30500>, <ThaumicTinkerer:kamiResource:1>, <Thaumcraft:blockChestHungry>, <gregtech:gt.metaitem.01:22306>], 
 "vacuos 64, aer 64, humanus 32, pannus 32, alienis 32", <ThaumicTinkerer:ichorPouch>, 10);
+<ThaumicTinkerer:ichorPouch>.addTooltip(format.darkPurple("Tweaked"));
+
+mods.thaumcraft.Arcane.removeRecipe(<NodalMechanics:item.nodalmechanics.matrix>);
+mods.thaumcraft.Infusion.addRecipe("NODETAPPER2", <gregtech:gt.metaitem.01:24506>, [
+<ThaumicHorizons:synthNode>, <gregtech:gt.metaitem.01:29330>, <ThaumicHorizons:synthNode>, <gregtech:gt.metaitem.01:29330>, <ThaumicHorizons:synthNode>, <gregtech:gt.metaitem.01:29330>, <ThaumicHorizons:synthNode>, <gregtech:gt.metaitem.01:29330>], 
+"auram 64, ordo 64, vacuos 64", <NodalMechanics:item.nodalmechanics.matrix>, 10);
+<ThaumicTinkerer:ichorPouch>.addTooltip(format.darkPurple("Tweaked"));
+
+mods.thaumcraft.Infusion.removeRecipe(<Thaumcraft:blockMirror>);
+mods.thaumcraft.Infusion.addRecipe("INFUSION", <Thaumcraft:ItemResource:10>, [
+<gregtech:gt.metaitem.01:17532>, <gregtech:gt.metaitem.01:29028>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:29028>, <gregtech:gt.metaitem.01:17532>, <gregtech:gt.metaitem.01:29028>, <minecraft:gold_ingot>, <gregtech:gt.metaitem.01:29028>], 
+"iter 8, tenebrae 8, permutatio 8", <Thaumcraft:blockMirror>, 10);
 <ThaumicTinkerer:ichorPouch>.addTooltip(format.darkPurple("Tweaked"));
 
 mods.thaumcraft.Infusion.removeRecipe(<Thaumcraft:ItemHelmetFortress>);
@@ -127,7 +140,7 @@ mods.thaumcraft.Infusion.addRecipe("BOOTSTRAVELLER", <minecraft:leather_chestpla
 
 mods.thaumcraft.Infusion.removeRecipe(<Thaumcraft:ItemGirdleHover>);
 mods.thaumcraft.Infusion.addRecipe("HOVERHARNESS", <Thaumcraft:ItemBaubleBlanks:2>, [
-<gregtech:gt.metaitem.02:31540>, <gregtech:gt.metaitem.02:21306>, <GTAddons:VoidMetalPlate>, <gregtech:gt.metaitem.02:31542>, <gregtech:gt.metaitem.02:21306>, <GTAddons:VoidMetalPlate>], 
+<gregtech:gt.metaitem.02:31540>, <gregtech:gt.metaitem.02:21306>, <TakPakCore:VoidMetalPlate>, <gregtech:gt.metaitem.02:31542>, <gregtech:gt.metaitem.02:21306>, <TakPakCore:VoidMetalPlate>], 
 "potentia 32, aer 32, volatus 16, iter 16", <Thaumcraft:ItemGirdleHover>, 6);
 <Thaumcraft:ItemGirdleHover>.addTooltip(format.darkPurple("Tweaked"));
 
@@ -171,3 +184,5 @@ NEI.hide(<Thaumcraft:ItemNugget:1>);
 NEI.hide(<Thaumcraft:ItemNugget>);
 <ore:nuggetTim>.remove(<Thaumcraft:ItemNugget:2>);
 NEI.hide(<Thaumcraft:ItemNugget:2>);
+
+mods.thaumcraft.Research.refreshResearchRecipe("VOIDMETAL");

@@ -15,7 +15,7 @@ var wiredModem = <ComputerCraft:CC-Cable:1>;
 var wirelessModem = <ComputerCraft:CC-Peripheral:1>;
 var miningTurtle = <ComputerCraft:CC-Turtle:1>;
 
-var pickaxe = <ore:craftingToolPickaxe>.noReturn();
+var pickaxe = <gregtech:gt.metatool.01:2>.withTag({"GT.ToolStats": {PrimaryMaterial: "Diamond", MaxDamage: 128000 as long, SecondaryMaterial: "Wood"}}).noReturn();
 
 var ironPlate = <ore:plateIron>;
 var aluminiumPlate = <ore:plateGold>;

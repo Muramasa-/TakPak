@@ -4,6 +4,7 @@ import mods.gregtech.BlastFurnace;
 import mods.gregtech.FluidExtractor;
 import mods.gregtech.FormingPress;
 import mods.ic2.Canner;
+import mods.ic2.Extractor;
 import mods.ic2.Compressor;
 import mods.nei.NEI;
 
@@ -26,30 +27,20 @@ recipes.addShapeless(<gregtech:gt.metaitem.01:9032> * 9, [<minecraft:iron_ingot>
 
 furnace.remove(<minecraft:coal:1>);
 
-Compressor.addRecipe(<gregtech:gt.metaitem.01:11033>, <gregtech:gt.blockmetal2:5>);
+furnace.remove(<*>, <MineFactoryReloaded:rubber.bar>);
+furnace.remove(<*>, <IC2:itemRubber>);
+furnace.remove(<*>, <gregtech:gt.metaitem.01:11880>);
+
+Compressor.addRecipe(<gregtech:gt.metaitem.01:11033> * 9, <gregtech:gt.blockmetal2:5>);
 
 recipes.remove(<gregtech:gt.metaitem.01:32700>);
 recipes.addShapeless(<gregtech:gt.metaitem.01:32700>, [<gregtech:gt.metaitem.01:17305>, <gregtech:gt.blockmachines:2000>, <gregtech:gt.blockmachines:2000>, <gregtech:gt.blockmachines:1240>]);
 
-mods.gregtech.ImplosionCompressor.addRecipe([<GalacticraftCore:item.heavyPlating>, <gregtech:gt.metaitem.01:19> * 2], <GTAddons:heavyIngot1>, 2);
-
 recipes.remove(<gregtech:gt.metaitem.01:32462>);
-recipes.addShaped(<GTAddons:heavyIngot1>, [
+recipes.addShaped(<gregtech:gt.metaitem.01:32462>, [
 [<gregtech:gt.metaitem.01:26019>, Hammer, <gregtech:gt.metaitem.01:26019>],
-[<GTAddons:compBronze>, <GTAddons:compAl>, <GTAddons:compSteel>],
+[<GalacticraftCore:item.basicItem:10>, <GalacticraftCore:item.basicItem:8>, <GalacticraftCore:item.basicItem:9>],
 [<gregtech:gt.metaitem.01:26019>, null, <gregtech:gt.metaitem.01:26019>]]);
-
-recipes.remove(<gregtech:gt.metaitem.01:32463>);
-recipes.addShaped(<gregtech:gt.metaitem.01:32463>, [
-[null, <gregtech:gt.metaitem.01:26081>, <gregtech:gt.metaitem.01:26081>],
-[Hammer,  <GalacticraftCore:item.heavyPlating>, <GTAddons:compMIron>],
-[null,  <gregtech:gt.metaitem.01:26081>,  <gregtech:gt.metaitem.01:26081>]]);
-
-recipes.remove(<gregtech:gt.metaitem.01:32464>);
-recipes.addShaped(<gregtech:gt.metaitem.01:32464>, [
-[null, <gregtech:gt.metaitem.01:26316>, <gregtech:gt.metaitem.01:26316>],
-[Hammer,  <GalacticraftMars:item.null:3>, <GTAddons:compDesh>],
-[null,  <gregtech:gt.metaitem.01:26316>,  <gregtech:gt.metaitem.01:26316>]]);
 
 recipes.remove(cirBasic);
 recipes.addShaped(cirBasic * 1, [
@@ -79,17 +70,59 @@ BlastFurnace.addRecipe([<Thaumcraft:ItemShard>], [<gregtech:gt.metaitem.01:2540>
 
 mods.gregtech.FluidSolidifier.addRecipe(<gregtech:gt.metaitem.01:2817>, <gregtech:gt.metaitem.01:32307>, <liquid:water> * 1000, 400, 2);
 
-vanilla.loot.removeChestLoot("villageBlacksmith", <gregtech:gt.metaitem.01:2067>);
-vanilla.loot.removeChestLoot("villageBlacksmith", <gregtech:gt.metaitem.01:11031>);
-vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:2067>);
-vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:11031>);
+<ore:foodSalt>.add(<gregtech:gt.metaitem.01:2817>);
+
+//Add Thaumium Wires to MV Components
+<ore:wireGt01AnyCopper>.add(<gregtech:gt.blockmachines:2200>);
+<ore:wireGt02AnyCopper>.add(<gregtech:gt.blockmachines:2201>);
+<ore:wireGt04AnyCopper>.add(<gregtech:gt.blockmachines:2202>);
+<ore:wireGt08AnyCopper>.add(<gregtech:gt.blockmachines:2203>);
+<ore:wireGt12AnyCopper>.add(<gregtech:gt.blockmachines:2204>);
+<ore:wireGt16AnyCopper>.add(<gregtech:gt.blockmachines:2205>);
 
 //Add Thaumium Cables To MV Components
-<ore:cableGt01AnyCopper>.add(<gregtech:gt.blockmachines:2106>);
-<ore:cableGt02AnyCopper>.add(<gregtech:gt.blockmachines:2107>);
-<ore:cableGt04AnyCopper>.add(<gregtech:gt.blockmachines:2108>);
-<ore:cableGt08AnyCopper>.add(<gregtech:gt.blockmachines:2109>);
-<ore:cableGt12AnyCopper>.add(<gregtech:gt.blockmachines:21>);
+<ore:cableGt01AnyCopper>.add(<gregtech:gt.blockmachines:2206>);
+<ore:cableGt02AnyCopper>.add(<gregtech:gt.blockmachines:2207>);
+<ore:cableGt04AnyCopper>.add(<gregtech:gt.blockmachines:2208>);
+<ore:cableGt08AnyCopper>.add(<gregtech:gt.blockmachines:2209>);
+<ore:cableGt12AnyCopper>.add(<gregtech:gt.blockmachines:2210>);
+
+//Add Annealed Thaumium Wires to MV Components
+<ore:wireGt01AnyCopper>.add(<gregtech:gt.blockmachines:2220>);
+<ore:wireGt02AnyCopper>.add(<gregtech:gt.blockmachines:2221>);
+<ore:wireGt04AnyCopper>.add(<gregtech:gt.blockmachines:2222>);
+<ore:wireGt08AnyCopper>.add(<gregtech:gt.blockmachines:2223>);
+<ore:wireGt12AnyCopper>.add(<gregtech:gt.blockmachines:2224>);
+<ore:wireGt16AnyCopper>.add(<gregtech:gt.blockmachines:2225>);
+
+//Add Annealed Thaumium Cables To MV Components
+<ore:cableGt01AnyCopper>.add(<gregtech:gt.blockmachines:2226>);
+<ore:cableGt02AnyCopper>.add(<gregtech:gt.blockmachines:2227>);
+<ore:cableGt04AnyCopper>.add(<gregtech:gt.blockmachines:2228>);
+<ore:cableGt08AnyCopper>.add(<gregtech:gt.blockmachines:2229>);
+<ore:cableGt12AnyCopper>.add(<gregtech:gt.blockmachines:2230>);
+
+//Remove Thaumium Cables From IC2 Crafting
+<ore:craftingWireCopper>.add(<gregtech:gt.blockmachines:2206>);
+<ore:wireCopper>.add(<gregtech:gt.blockmachines:2206>);
+
+//Remove Annealed Thaumium Cables From IC2 Crafting
+<ore:craftingWireCopper>.add(<gregtech:gt.blockmachines:2226>);
+<ore:wireCopper>.add(<gregtech:gt.blockmachines:2226>);
+
+//Remove Copper Wires From MV Components
+<ore:wireGt01AnyCopper>.remove(<gregtech:gt.blockmachines:1360>);
+<ore:wireGt01Copper>.remove(<gregtech:gt.blockmachines:1360>);
+<ore:wireGt02AnyCopper>.remove(<gregtech:gt.blockmachines:1361>);
+<ore:wireGt02Copper>.remove(<gregtech:gt.blockmachines:1361>);
+<ore:wireGt04AnyCopper>.remove(<gregtech:gt.blockmachines:1362>);
+<ore:wireGt04Copper>.remove(<gregtech:gt.blockmachines:1362>);
+<ore:wireGt08AnyCopper>.remove(<gregtech:gt.blockmachines:1363>);
+<ore:wireGt08Copper>.remove(<gregtech:gt.blockmachines:1363>);
+<ore:wireGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1364>);
+<ore:wireGt12Copper>.remove(<gregtech:gt.blockmachines:1364>);
+<ore:wireGt16AnyCopper>.remove(<gregtech:gt.blockmachines:1365>);
+<ore:wireGt16Copper>.remove(<gregtech:gt.blockmachines:1365>);
 
 //Remove Copper Cables From MV Components
 <ore:cableGt01AnyCopper>.remove(<gregtech:gt.blockmachines:1366>);
@@ -100,8 +133,22 @@ vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:11031>);
 <ore:cableGt04Copper>.remove(<gregtech:gt.blockmachines:1368>);
 <ore:cableGt08AnyCopper>.remove(<gregtech:gt.blockmachines:1369>);
 <ore:cableGt08Copper>.remove(<gregtech:gt.blockmachines:1369>);
-<ore:cableGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1369>);
-<ore:cableGt12Copper>.remove(<gregtech:gt.blockmachines:1369>);
+<ore:cableGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1370>);
+<ore:cableGt12Copper>.remove(<gregtech:gt.blockmachines:1370>);
+
+//Remove Annealed Copper Wires From MV Components
+<ore:wireGt01AnyCopper>.remove(<gregtech:gt.blockmachines:1380>);
+<ore:wireGt01Copper>.remove(<gregtech:gt.blockmachines:1380>);
+<ore:wireGt02AnyCopper>.remove(<gregtech:gt.blockmachines:1381>);
+<ore:wireGt02Copper>.remove(<gregtech:gt.blockmachines:1381>);
+<ore:wireGt04AnyCopper>.remove(<gregtech:gt.blockmachines:1382>);
+<ore:wireGt04Copper>.remove(<gregtech:gt.blockmachines:1382>);
+<ore:wireGt08AnyCopper>.remove(<gregtech:gt.blockmachines:1383>);
+<ore:wireGt08Copper>.remove(<gregtech:gt.blockmachines:1383>);
+<ore:wireGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1384>);
+<ore:wireGt12Copper>.remove(<gregtech:gt.blockmachines:1384>);
+<ore:wireGt16AnyCopper>.remove(<gregtech:gt.blockmachines:1385>);
+<ore:wireGt16Copper>.remove(<gregtech:gt.blockmachines:1385>);
 
 //Remove Annealed Copper Cables From MV Components
 <ore:cableGt01AnyCopper>.remove(<gregtech:gt.blockmachines:1386>);
@@ -115,4 +162,10 @@ vanilla.loot.removeChestLoot("dungeonChest", <gregtech:gt.metaitem.01:11031>);
 <ore:cableGt12AnyCopper>.remove(<gregtech:gt.blockmachines:1390>);
 <ore:cableGt12AnnealedCopper>.remove(<gregtech:gt.blockmachines:1390>);
 
-<ore:foodSalt>.add(<gregtech:gt.metaitem.01:2817>);
+//Remove Copper Cables From IC2 Crafting
+<ore:craftingWireCopper>.remove(<gregtech:gt.blockmachines:1366>);
+<ore:wireCopper>.remove(<gregtech:gt.blockmachines:1366>);
+
+//Remove Annealed Copper Cables From IC2 Crafting
+<ore:craftingWireCopper>.remove(<gregtech:gt.blockmachines:1386>);
+<ore:wireCopper>.remove(<gregtech:gt.blockmachines:1386>);

@@ -3,7 +3,7 @@
     {
         "title":
         {
-            "image" : "image:singleplayer.png",
+            "image" : "image:title.png",
             "posX" : -137,
             "posY" : 25,
             "width" : 284.5,
@@ -166,7 +166,7 @@
         },
 		"pack2":
         {
-            "text" : "2.2.2",
+            "text" : "2.3.1",
             "posX" : 47,
             "posY" : -40,
             "color" : 16777045,

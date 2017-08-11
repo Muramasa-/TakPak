@@ -1,23 +1,9 @@
 {
 	"comments":"Comments are really just any unused tag",
-	"clear":["tconstruct.modifiers.tools.ModInteger", "tconstruct.modifiers.tools.ModRedstone", "tconstruct.modifiers.tools.ModFlux", "tconstruct.modifiers.tools.ModPiston", "tconstruct.modifiers.tools.ModReinforced", "tconstruct.modifiers.tools.ModSmite", "tconstruct.modifiers.tools.ModDurability", "tconstruct.modifiers.tools.ModLapis"],
+	"clear":["tconstruct.modifiers.tools.ModInteger", "tconstruct.modifiers.tools.ModRedstone", "tconstruct.modifiers.tools.ModFlux", "tconstruct.modifiers.tools.ModPiston", "tconstruct.modifiers.tools.ModReinforced", "tconstruct.modifiers.tools.ModSmite", "tconstruct.modifiers.tools.ModDurability", "tconstruct.modifiers.tools.ModLapis", "org.abimon.mods.minecraft.tmodifiers.modifiers.ModCustomHaste"],
 	"clearComment":"That was the clear tag. That's used to clear any existing modifiers with that class. Using an asterisk (*) will clear all modifiers.",
 	"itemComment":"The other thing to note is that items are defined using a dictionary ({}). There, define 'item' using a string and 'damage' using either an int or a string for a wildcard. Stack size is ignored",
 	"addModifiers":[
-		{
-			"class":"tconstruct.modifiers.tools.ModWindup",
-			"arg0":2,
-			"arg1":[
-				{
-					"item":"minecraft:sugar"
-				}
-			],
-			"arg2":[
-				1
-			],
-			"arg3":"Haste",
-			"arg4":50
-		},
 		{
 			"class":"org.abimon.mods.minecraft.tmodifiers.modifiers.ModCustomHaste",
 			"arg0":2,

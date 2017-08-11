@@ -61,6 +61,8 @@ recipes.removeShapeless(<MineFactoryReloaded:cable.redstone:2>);
 NEI.hide(<MineFactoryReloaded:cable.redstone:2>);
 recipes.removeShapeless(<MineFactoryReloaded:cable.redstone:3>);
 NEI.hide(<MineFactoryReloaded:cable.redstone:3>);
+recipes.remove(<MineFactoryReloaded:machine.2:10>);
+NEI.hide(<MineFactoryReloaded:machine.2:10>);
 
 //Ore Dict
 //var platePlastic = <ore:platePlastic>;
@@ -86,17 +88,19 @@ Extractor.addRecipe(<gregtech:gt.metaitem.01:2896>, <MineFactoryReloaded:rubber.
 
 # Nerfs Laser Drill
 recipes.remove(laserDrill);
-recipes.addShaped(laserDrill,[
-[<gregtech:gt.metaitem.01:24347>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24347>], 
-[<gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:15>,  <gregtech:gt.metaitem.01:32683>], 
-[<gregtech:gt.metaitem.01:24347>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24347>]]);
+NEI.hide(laserDrill);
+//recipes.addShaped(laserDrill,[
+//[<gregtech:gt.metaitem.01:24347>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24347>], 
+//[<gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:15>,  <gregtech:gt.metaitem.01:32683>], 
+//[<gregtech:gt.metaitem.01:24347>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24347>]]);
 
 # Nerfs Laser Prechargers
 recipes.remove(laserPrecharger);
-recipes.addShaped(laserPrecharger,[
-[<gregtech:gt.blockmachines:4412>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:4412>], 
-[<gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24506>,  <gregtech:gt.metaitem.01:32683>], 
-[<gregtech:gt.blockmachines:4412>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:4412>]]);
+NEI.hide(laserPrecharger);
+//recipes.addShaped(laserPrecharger,[
+//[<gregtech:gt.blockmachines:4412>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:4412>], 
+//[<gregtech:gt.metaitem.01:32683>,  <gregtech:gt.metaitem.01:24506>,  <gregtech:gt.metaitem.01:32683>], 
+//[<gregtech:gt.blockmachines:4412>,  <gregtech:gt.metaitem.01:32683>,  <gregtech:gt.blockmachines:4412>]]);
 
 # Nerfs NeedleGun
 recipes.remove(needleGun);

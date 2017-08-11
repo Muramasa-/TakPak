@@ -168,6 +168,34 @@ var tcTin = <TConstruct:materials:10>;
 var tcAluminum = <TConstruct:materials:11>;
 var tcBronze = <TConstruct:materials:13>;
 var tcSteel = <TConstruct:materials:16>;
+var tcCobalt = <TConstruct:materials:3>;
+var tcCobaltDust = <TConstruct:materials:39>;
+var tcAluminumDust = <TConstruct:materials:40>;
+var tcObsidian = <TConstruct:materials:18>;
+var tcObsidianNug = <TConstruct:materials:27>;
+
+<ore:ingotCobalt>.remove(tcCobalt);
+<ore:dustCobalt>.remove(tcCobaltDust);
+<ore:dustAluminium>.remove(tcAluminumDust);
+<ore:dustAluminum>.remove(tcAluminumDust);
+<ore:ingotObsidian>.remove(tcObsidian);
+<ore:nuggetObsidian>.remove(tcObsidianNug);
+<ore:nuggetTin>.remove(<TConstruct:materials:21>);
+<ore:nuggetAluminium>.remove(<TConstruct:materials:22>);
+<ore:nuggetAluminum>.remove(<TConstruct:materials:22>);
+<ore:nuggetCopper>.remove(<TConstruct:materials:20>);
+<ore:nuggetIron>.remove(<TConstruct:materials:19>);
+<ore:nuggetCobalt>.remove(<TConstruct:materials:28>);
+<ore:nuggetBronze>.remove(<TConstruct:materials:31>);
+<ore:nuggetSteel>.remove(<TConstruct:materials:33>);
+<ore:nuggetObsidian>.remove(<TConstruct:materials:27>);
+<ore:blockCobalt>.remove(<TConstruct:MetalBlock>);
+<ore:blockCopper>.remove(<TConstruct:MetalBlock:3>);
+<ore:blockBronze>.remove(<TConstruct:MetalBlock:4>);
+<ore:blockTin>.remove(<TConstruct:MetalBlock:5>);
+<ore:blockAluminium>.remove(<TConstruct:MetalBlock:6>);
+<ore:blockAluminum>.remove(<TConstruct:MetalBlock:6>);
+<ore:blockSteel>.remove(<TConstruct:MetalBlock:9>);
 
 //MFR Items
 var mfrPlasticSheet = <MineFactoryReloaded:plastic.sheet>;

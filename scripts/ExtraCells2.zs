@@ -337,26 +337,26 @@ recipes.addShapeless(<extracells:storage.physical:3>, [<extracells:storage.compo
 // --- Storage Cell Component - 256K
 recipes.addShaped(StorageComponent256K, [
 [<gregtech:gt.metaitem.01:32706>, StorageComponent64K, <gregtech:gt.metaitem.01:32706>],
-[StorageComponent64K, <GTAddons:ItemProcessor3>, StorageComponent64K],
+[StorageComponent64K, <TakPakCore:ItemProcessor3>, StorageComponent64K],
 [<gregtech:gt.metaitem.01:32706>, StorageComponent64K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Storage Cell Component - 1024K
 recipes.addShaped(StorageComponent1024K, [
-[<GTAddons:LuVCircuit>, StorageComponent256K, <GTAddons:LuVCircuit>],
-[StorageComponent256K, <GTAddons:ItemProcessor3>, StorageComponent256K],
-[<GTAddons:LuVCircuit>, StorageComponent256K, <GTAddons:LuVCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, StorageComponent256K, <gregtech:gt.metaitem.01:32706>],
+[StorageComponent256K, <TakPakCore:ItemProcessor3>, StorageComponent256K],
+[<gregtech:gt.metaitem.01:32706>, StorageComponent256K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Storage Cell Component - 4096K
 recipes.addShaped(StorageComponent4096K, [
-[<GTAddons:ZPMCircuit>, StorageComponent1024K, <GTAddons:ZPMCircuit>],
-[StorageComponent1024K, <GTAddons:ItemProcessor4>, StorageComponent1024K],
-[<GTAddons:ZPMCircuit>, StorageComponent1024K, <GTAddons:ZPMCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, StorageComponent1024K, <gregtech:gt.metaitem.01:32706>],
+[StorageComponent1024K, <TakPakCore:ItemProcessor4>, StorageComponent1024K],
+[<gregtech:gt.metaitem.01:32706>, StorageComponent1024K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Storage Cell Component - 16384K
 recipes.addShaped(StorageComponent16384K, [
-[<GTAddons:UVCircuit>, StorageComponent4096K, <GTAddons:UVCircuit>],
-[StorageComponent4096K, <GTAddons:ItemProcessor4>, StorageComponent4096K],
-[<GTAddons:UVCircuit>, StorageComponent4096K, <GTAddons:UVCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, StorageComponent4096K, <gregtech:gt.metaitem.01:32706>],
+[StorageComponent4096K, <TakPakCore:ItemProcessor4>, StorageComponent4096K],
+[<gregtech:gt.metaitem.01:32706>, StorageComponent4096K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Universal Advanced Storage Housing
 recipes.addShaped(UAdvStorageHousing, [
@@ -463,62 +463,62 @@ recipes.addShapeless(<extracells:storage.fluid:6>, [<extracells:storage.componen
 // --- Fluid Storage Cell Component - 1K
 recipes.addShaped(FluidSComponent1K, [
 [BasicCircuit, <appliedenergistics2:item.ItemMultiMaterial:8>, BasicCircuit],
-[<appliedenergistics2:item.ItemMultiMaterial:8>, <GTAddons:FluidProcessor1>, <appliedenergistics2:item.ItemMultiMaterial:8>],
+[<appliedenergistics2:item.ItemMultiMaterial:8>, <TakPakCore:FluidProcessor1>, <appliedenergistics2:item.ItemMultiMaterial:8>],
 [BasicCircuit, <appliedenergistics2:item.ItemMultiMaterial:8>, BasicCircuit]]);
 
 // --- Fluid Storage Cell Component - 4K
 recipes.addShaped(FluidSComponent4K, [
 [GoodCircuit, FluidSComponent1K, GoodCircuit],
-[FluidSComponent1K, <GTAddons:FluidProcessor1>, FluidSComponent1K],
+[FluidSComponent1K, <TakPakCore:FluidProcessor1>, FluidSComponent1K],
 [GoodCircuit, FluidSComponent1K, GoodCircuit]]);
 
 // --- Fluid Storage Cell Component - 16K
 recipes.addShaped(FluidSComponent16K, [
 [AdvCircuit, FluidSComponent4K, AdvCircuit],
-[FluidSComponent4K, <GTAddons:FluidProcessor2>, FluidSComponent4K],
+[FluidSComponent4K, <TakPakCore:FluidProcessor2>, FluidSComponent4K],
 [AdvCircuit, FluidSComponent4K, AdvCircuit]]);
 
 // --- Fluid Storage Cell Component - 64K
 recipes.addShaped(FluidSComponent64K, [
 [DataControlCircuit, FluidSComponent16K, DataControlCircuit],
-[FluidSComponent16K, <GTAddons:FluidProcessor2>, FluidSComponent16K],
+[FluidSComponent16K, <TakPakCore:FluidProcessor2>, FluidSComponent16K],
 [DataControlCircuit, FluidSComponent16K, DataControlCircuit]]);
 
 // --- Fluid Storage Cell Component - 256K
 recipes.addShaped(FluidSComponent256K, [
 [<gregtech:gt.metaitem.01:32706>, FluidSComponent64K, <gregtech:gt.metaitem.01:32706>],
-[FluidSComponent64K, <GTAddons:FluidProcessor3>, FluidSComponent64K],
+[FluidSComponent64K, <TakPakCore:FluidProcessor3>, FluidSComponent64K],
 [<gregtech:gt.metaitem.01:32706>, FluidSComponent64K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Fluid Storage Cell Component - 1024K
 recipes.addShaped(FluidSComponent1024K, [
-[<GTAddons:LuVCircuit>, FluidSComponent256K, <GTAddons:LuVCircuit>],
-[FluidSComponent256K, <GTAddons:FluidProcessor3>, FluidSComponent256K],
-[<GTAddons:LuVCircuit>, FluidSComponent256K, <GTAddons:LuVCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent256K, <gregtech:gt.metaitem.01:32706>],
+[FluidSComponent256K, <TakPakCore:FluidProcessor3>, FluidSComponent256K],
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent256K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Fluid Storage Cell Component - 4096K
 recipes.addShaped(FluidSComponent4096K, [
-[<GTAddons:ZPMCircuit>, FluidSComponent1024K, <GTAddons:ZPMCircuit>],
-[FluidSComponent1024K, <GTAddons:FluidProcessor4>, FluidSComponent1024K],
-[<GTAddons:ZPMCircuit>, FluidSComponent1024K, <GTAddons:ZPMCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent1024K, <gregtech:gt.metaitem.01:32706>],
+[FluidSComponent1024K, <TakPakCore:FluidProcessor4>, FluidSComponent1024K],
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent1024K, <gregtech:gt.metaitem.01:32706>]]);
 
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:32>);
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:32>, [
 [DataControlCircuit, FluidSComponent1024K, DataControlCircuit],
-[FluidSComponent1024K, <GTAddons:SpatialProcessor1>, FluidSComponent1024K],
+[FluidSComponent1024K, <TakPakCore:SpatialProcessor1>, FluidSComponent1024K],
 [DataControlCircuit, FluidSComponent1024K, DataControlCircuit]]);
 
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:33>);
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:32>, [
 [EFlow, FluidSComponent1024K, EFlow],
-[FluidSComponent1024K, <GTAddons:SpatialProcessor1>, FluidSComponent1024K],
+[FluidSComponent1024K, <TakPakCore:SpatialProcessor1>, FluidSComponent1024K],
 [EFlow, FluidSComponent1024K, EFlow]]);
 
 recipes.remove(<appliedenergistics2:item.ItemMultiMaterial:34>);
 recipes.addShaped(<appliedenergistics2:item.ItemMultiMaterial:34>, [
-[<GTAddons:LuVCircuit>, FluidSComponent1024K, <GTAddons:LuVCircuit>],
-[FluidSComponent1024K, <GTAddons:SpatialProcessor2>, FluidSComponent1024K],
-[<GTAddons:LuVCircuit>, FluidSComponent1024K, <GTAddons:LuVCircuit>]]);
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent1024K, <gregtech:gt.metaitem.01:32706>],
+[FluidSComponent1024K, <TakPakCore:SpatialProcessor2>, FluidSComponent1024K],
+[<gregtech:gt.metaitem.01:32706>, FluidSComponent1024K, <gregtech:gt.metaitem.01:32706>]]);
 
 // --- Universal Fluid Storage Housing
 recipes.addShaped(UFluidStorageHousing, [
